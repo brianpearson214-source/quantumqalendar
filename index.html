@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantum Calendar | Quantum computing conferences &amp; events</title>
+<meta name="description" content="A running calendar of quantum computing conferences, summits, workshops and community events — U.S.-focused, with the international meetings that matter.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quantum Calendar">
+<meta property="og:description" content="A running calendar of quantum computing conferences, summits, workshops and community events.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Quantum Calendar">
+<meta name="twitter:description" content="A running calendar of quantum computing conferences, summits, workshops and community events.">
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<a class="skip-link" href="#events">Skip to events</a>
+
+<header class="masthead">
+  <div class="container masthead-inner">
+    <a class="wordmark" href="./">
+      <span class="wordmark-mark" aria-hidden="true"></span>
+      <span class="wordmark-text">Quantum<em>Calendar</em></span>
+    </a>
+    <nav class="masthead-nav">
+      <a href="#events">Events</a>
+      <a href="#submit">Submit an event</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Every quantum event, on one page.</h1>
+    <p class="hero-sub">
+      Conferences, summits, workshops and community meetups across quantum computing —
+      U.S.-focused, with the international meetings worth the flight.
+    </p>
+    <div class="hero-stats" id="hero-stats" aria-live="polite">
+      <div class="stat">
+        <span class="stat-value" data-stat="count">—</span>
+        <span class="stat-label">upcoming events</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" data-stat="next-days">—</span>
+        <span class="stat-label" data-stat="next-label">until the next one</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" data-stat="us-count">—</span>
+        <span class="stat-label">in the United States</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="controls" id="controls">
+  <div class="container controls-inner">
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+        <circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M13.5 13.5 18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <input type="search" id="search" placeholder="Search events, cities, topics…" aria-label="Search events" autocomplete="off">
+    </div>
+
+    <div class="filter-row">
+      <div class="filter-group" role="group" aria-label="Filter by region">
+        <span class="filter-label">Where</span>
+        <div class="chips" data-filter="region">
+          <button class="chip is-active" data-value="all">All</button>
+          <button class="chip" data-value="us">U.S.</button>
+          <button class="chip" data-value="canada">Canada</button>
+          <button class="chip" data-value="europe">Europe</button>
+          <button class="chip" data-value="asia-pacific">Asia-Pacific</button>
+          <button class="chip" data-value="other">Elsewhere</button>
+        </div>
+      </div>
+
+      <div class="filter-group" role="group" aria-label="Filter by category">
+        <span class="filter-label">What</span>
+        <div class="chips" data-filter="category">
+          <button class="chip is-active" data-value="all">All</button>
+          <button class="chip" data-value="industry">Industry</button>
+          <button class="chip" data-value="research">Research</button>
+          <button class="chip" data-value="policy">Policy &amp; defence</button>
+          <button class="chip" data-value="community">Community</button>
+        </div>
+      </div>
+
+      <label class="toggle">
+        <input type="checkbox" id="show-past">
+        <span>Show past events</span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<main class="container" id="events">
+  <p class="result-count" id="result-count" aria-live="polite"></p>
+  <div id="calendar"></div>
+
+  <div class="empty" id="empty" hidden>
+    <h2>Nothing matches that.</h2>
+    <p>Try clearing a filter or searching for something broader.</p>
+    <button class="btn" id="reset-filters">Reset filters</button>
+  </div>
+
+  <div class="empty" id="load-error" hidden>
+    <h2>Couldn't load the event data.</h2>
+    <p>
+      <code>events.json</code> is fetched over HTTP, so opening <code>index.html</code>
+      straight from the filesystem won't work. Serve the folder instead:
+    </p>
+    <pre><code>python3 -m http.server 8000</code></pre>
+  </div>
+</main>
+
+<section class="submit" id="submit">
+  <div class="container">
+    <h2>Missing something?</h2>
+    <p>
+      This calendar is hand-curated — no scraping, no pay-to-list. If a quantum event
+      belongs here, send the name, dates, location and a link and it'll go in.
+    </p>
+    <a class="btn btn-primary" href="mailto:brian.pearson214@gmail.com?subject=Quantum%20Calendar%20%E2%80%94%20event%20submission">Submit an event</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>
+      Quantum Calendar · dates are compiled from organizers' official pages and
+      may change — always confirm on the event site before booking travel.
+    </p>
+    <p class="footer-meta">Last updated <span id="last-updated">—</span></p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
