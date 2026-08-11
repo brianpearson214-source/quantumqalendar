@@ -37,7 +37,6 @@
     search: document.getElementById('search'),
     showPast: document.getElementById('show-past'),
     reset: document.getElementById('reset-filters'),
-    stats: document.getElementById('hero-stats'),
     lastUpdated: document.getElementById('last-updated')
   };
 
@@ -232,32 +231,6 @@
     els.calendar.appendChild(wrap);
   }
 
-  function renderStats() {
-    var upcoming = state.events.filter(function (e) { return !e.isPast; });
-    var next = upcoming[0];
-
-    set('count', String(upcoming.length));
-    set('us-count', String(upcoming.filter(function (e) { return e.region === 'us'; }).length));
-
-    if (next) {
-      var label = els.stats.querySelector('[data-stat="next-label"]');
-      if (next.daysAway <= 0) {
-        set('next-days', 'Now');
-        if (label) label.textContent = (next.shortName || next.name) + ' is under way';
-      } else {
-        set('next-days', next.daysAway + (next.daysAway === 1 ? ' day' : ' days'));
-        if (label) label.textContent = 'until ' + (next.shortName || next.name);
-      }
-    } else {
-      set('next-days', '—');
-    }
-
-    function set(name, value) {
-      var node = els.stats.querySelector('[data-stat="' + name + '"]');
-      if (node) node.textContent = value;
-    }
-  }
-
   /* ---------- .ics export ---------- */
 
   function icsDate(d) {
@@ -379,7 +352,6 @@
     .then(function (raw) {
       hydrate(raw);
       bindFilters();
-      renderStats();
       render();
     })
     .catch(function (err) {
