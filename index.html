@@ -15,8 +15,8 @@
 
 <!-- ?v= busts GitHub Pages' 10-minute asset cache. Bump it whenever
      style.css, app.js or the favicon changes. -->
-<link rel="stylesheet" href="style.css?v=3">
-<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=4">
+<link rel="icon" href="assets/favicon.svg?v=4" type="image/svg+xml">
 </head>
 <body>
 
@@ -25,7 +25,14 @@
 <header class="masthead">
   <div class="container masthead-inner">
     <a class="wordmark" href="./">
-      <span class="wordmark-mark" aria-hidden="true"></span>
+      <svg class="wordmark-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="3" y="5" width="18" height="16" rx="3" fill="none"
+              stroke="currentColor" stroke-width="2"/>
+        <path d="M3 10h18" stroke="currentColor" stroke-width="2"/>
+        <path d="M8 2.5v4M16 2.5v4" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round"/>
+        <rect x="6.75" y="13" width="3.5" height="3.5" rx="1" fill="currentColor"/>
+      </svg>
       <span class="wordmark-text">Quantum<em>Calendar</em></span>
     </a>
   </div>
@@ -34,11 +41,6 @@
 <section class="hero">
   <div class="container">
     <h1>Every quantum event, on one page.</h1>
-    <p class="hero-sub">
-      Every North American quantum computing conference, summit, workshop and
-      community event — the United States, Canada and Mexico, plus the online
-      ones anyone can join.
-    </p>
   </div>
 </section>
 
@@ -115,6 +117,6 @@
   </div>
 </footer>
 
-<script src="app.js?v=3"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>

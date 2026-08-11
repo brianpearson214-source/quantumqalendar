@@ -18,26 +18,11 @@
   --shadow: 0 1px 2px rgba(11, 37, 69, .06), 0 8px 24px rgba(11, 37, 69, .08);
   --radius: 14px;
   --maxw: 1080px;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #061627;
-    --bg-alt: #0b2138;
-    --bg-sunk: #102b46;
-    --ink: #eaf1f9;
-    --ink-soft: #a8c0d8;
-    --ink-faint: #7794b1;
-    --line: #17334f;
-    --line-strong: #234566;
-    --accent: #8fb8de;
-    --accent-soft: #12304d;
-    --accent-ink: #b9d5ee;
-    --amber: #e8b869;
-    --amber-soft: #33280f;
-    --card: #0a1e33;
-    --shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 24px rgba(0, 0, 0, .3);
-  }
+  /* Light only — the page keeps its white ground even when the visitor's
+     OS is set to dark mode. Also keeps native controls (search field,
+     checkbox) rendering light rather than inverted. */
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -105,25 +90,17 @@ a { color: var(--accent); }
   letter-spacing: -.02em;
 }
 .wordmark-mark {
-  width: 22px; height: 22px;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
-  position: relative;
+  width: 23px; height: 23px;
   flex: none;
-}
-.wordmark-mark::after {
-  content: "";
-  position: absolute;
-  inset: 5px;
-  border-radius: 50%;
-  background: var(--accent);
+  color: var(--accent);
+  display: block;
 }
 .wordmark-text em { font-style: normal; color: var(--accent); }
 
 /* ---------- hero ---------- */
 
 .hero {
-  padding: 64px 0 40px;
+  padding: 52px 0 40px;
   background:
     radial-gradient(900px 340px at 12% -10%, var(--accent-soft), transparent 65%),
     var(--bg);
@@ -131,11 +108,6 @@ a { color: var(--accent); }
 .hero h1 {
   font-size: clamp(2rem, 5.2vw, 3.2rem);
   max-width: 16ch;
-}
-.hero-sub {
-  font-size: 1.1rem;
-  color: var(--ink-soft);
-  max-width: 58ch;
   margin-bottom: 0;
 }
 
@@ -373,11 +345,6 @@ main { padding: 28px 24px 56px; }
 .tag-research { border-color: color-mix(in srgb, #2a6f97 50%, transparent); color: #2a6f97; }
 .tag-policy   { border-color: color-mix(in srgb, var(--amber) 55%, transparent); color: var(--amber); }
 .tag-community{ border-color: color-mix(in srgb, #5b7fa6 55%, transparent); color: #4a6f96; }
-@media (prefers-color-scheme: dark) {
-  .tag-industry { border-color: color-mix(in srgb, #9dc4e8 50%, transparent); color: #9dc4e8; }
-  .tag-research { border-color: color-mix(in srgb, #6fb3d9 50%, transparent); color: #6fb3d9; }
-  .tag-community { border-color: color-mix(in srgb, #93aecb 50%, transparent); color: #a3bcd6; }
-}
 
 .soon {
   display: inline-block;
