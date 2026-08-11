@@ -63,6 +63,14 @@ Also bump `"updated"` at the top of the file — it renders in the footer.
 Dates are compiled from organizers' official pages. They change; re-check before
 each release.
 
+## Cache busting
+
+GitHub Pages serves assets with `cache-control: max-age=600`, so a returning
+visitor can see a stale stylesheet for up to ten minutes after a deploy.
+`index.html` therefore loads `style.css?v=N` and `app.js?v=N` — **bump `N` in
+`index.html` whenever you change either file** and the update lands immediately.
+`events.json` is fetched with `cache: 'no-cache'` and needs no bump.
+
 ## Deploying
 
 Any static host works. For GitHub Pages: push to `main`, then enable Pages on the
