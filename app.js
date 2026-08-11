@@ -128,7 +128,9 @@
     /* Dates */
     var dateCell = cell('Dates', 'col-dates');
     dateCell.appendChild(el('span', 'date-range', formatRange(ev.startDate, ev.endDate)));
-    if (!ev.isPast && ev.daysAway >= 0 && ev.daysAway <= 30) {
+    if (ev.isOngoing) {
+      dateCell.appendChild(el('span', 'soon', 'Under way'));
+    } else if (!ev.isPast && ev.daysAway >= 0 && ev.daysAway <= 30) {
       dateCell.appendChild(el('span', 'soon',
         ev.daysAway === 0 ? 'Today' : ev.daysAway === 1 ? 'Tomorrow' : 'In ' + ev.daysAway + ' days'));
     }
@@ -209,7 +211,7 @@
     var order = [];
     var byMonth = {};
     visible.forEach(function (ev) {
-      var key = ev.startDate.getFullYear() + '-' + ev.startDate.getMonth();
+      var key = ev.groupDate.getFullYear() + '-' + ev.groupDate.getMonth();
       if (!byMonth[key]) {
         byMonth[key] = [];
         order.push(key);
@@ -223,7 +225,7 @@
 
     order.forEach(function (key) {
       var group = byMonth[key];
-      tbody.appendChild(monthRow(group[0].startDate, group.length));
+      tbody.appendChild(monthRow(group[0].groupDate, group.length));
       group.forEach(function (ev) { tbody.appendChild(renderRow(ev)); });
     });
 
@@ -330,13 +332,20 @@
     state.events = raw.events.map(function (ev) {
       var start = parseDate(ev.start);
       var end = parseDate(ev.end || ev.start);
+      var isOngoing = start <= today && end >= today;
       return Object.assign({}, ev, {
         startDate: start,
         endDate: end,
         isPast: end < today,
-        daysAway: daysBetween(today, start)
+        isOngoing: isOngoing,
+        daysAway: daysBetween(today, start),
+        // A long-running event that began in an earlier month belongs with the
+        // current month, not stranded above everything under its start month.
+        groupDate: isOngoing ? today : start
       });
-    }).sort(function (a, b) { return a.startDate - b.startDate; });
+    }).sort(function (a, b) {
+      return (a.groupDate - b.groupDate) || (a.startDate - b.startDate);
+    });
 
     if (raw.updated && els.lastUpdated) {
       var u = parseDate(raw.updated);

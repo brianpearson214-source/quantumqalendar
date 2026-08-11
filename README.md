@@ -3,9 +3,10 @@
 A hand-curated calendar of quantum computing conferences, summits, workshops and
 community events.
 
-**Scope: North America only** — United States, Canada and Mexico. Listings are
-compiled from <https://quantum.technology/conf/index.html> and cross-checked
-against organizers' own pages where those exist.
+**Scope: North America** — United States, Canada and Mexico — plus online events
+that anyone can join regardless of location. Listings are compiled from
+<https://quantum.technology/conf/index.html>, IBM's own events listing at
+<https://www.ibm.com/quantum/events>, and organizers' pages where those exist.
 
 Static site: plain HTML, CSS and vanilla JS. No build step, no dependencies.
 
@@ -49,7 +50,7 @@ Field notes:
 
 | Field | Values |
 | --- | --- |
-| `region` | `us`, `canada`, `mexico` — drives the "Where" filter |
+| `region` | `us`, `canada`, `mexico`, `online` — drives the "Where" filter |
 | `category` | `industry`, `research`, `policy`, `community` — drives the "What" filter |
 | `format` | `in-person`, `hybrid`, `virtual` |
 | `audience` | Free text, shown in the "Intended audience" column |
