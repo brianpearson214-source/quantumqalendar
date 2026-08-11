@@ -158,23 +158,10 @@
     return row;
   }
 
-  function monthRow(date, count) {
-    var row = el('tr', 'month-row');
-    var th = el('th');
-    th.setAttribute('colspan', '4');
-    th.setAttribute('scope', 'colgroup');
-    th.appendChild(el('span', 'month-name',
-      MONTHS[date.getMonth()] + ' ' + date.getFullYear()));
-    th.appendChild(el('span', 'month-count',
-      count + (count === 1 ? ' event' : ' events')));
-    row.appendChild(th);
-    return row;
-  }
-
   function buildTable() {
     var table = el('table', 'event-table');
     var caption = el('caption', 'sr-only',
-      'Quantum computing conferences and events, grouped by month');
+      'Quantum computing conferences and events, in date order');
     table.appendChild(caption);
 
     var thead = el('thead');
@@ -207,27 +194,11 @@
       visible.length + (visible.length === 1 ? ' event' : ' events') +
       (state.region === 'all' && state.category === 'all' && !state.query ? '' : ' matching your filters');
 
-    // Count per month first, so each month header can state its own total.
-    var order = [];
-    var byMonth = {};
-    visible.forEach(function (ev) {
-      var key = ev.groupDate.getFullYear() + '-' + ev.groupDate.getMonth();
-      if (!byMonth[key]) {
-        byMonth[key] = [];
-        order.push(key);
-      }
-      byMonth[key].push(ev);
-    });
-
     var wrap = el('div', 'table-wrap');
     var table = buildTable();
     var tbody = table.querySelector('tbody');
 
-    order.forEach(function (key) {
-      var group = byMonth[key];
-      tbody.appendChild(monthRow(group[0].groupDate, group.length));
-      group.forEach(function (ev) { tbody.appendChild(renderRow(ev)); });
-    });
+    visible.forEach(function (ev) { tbody.appendChild(renderRow(ev)); });
 
     wrap.appendChild(table);
     els.calendar.appendChild(wrap);
