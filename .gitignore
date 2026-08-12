@@ -1,2 +1,5 @@
 .DS_Store
 *.log
+
+# Local editor/agent config — machine-specific, not site content
+.claude/
