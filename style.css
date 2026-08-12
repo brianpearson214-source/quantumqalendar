@@ -465,6 +465,25 @@ main { padding: 28px 24px 56px; }
   .event-row.is-featured td { background: transparent; box-shadow: none; }
   .event-row.is-featured { box-shadow: inset 3px 0 0 var(--accent); background: var(--accent-soft); }
   .event-blurb { max-width: none; }
+
+  /* Touch targets. At desktop sizes these are pointer-accurate, but on a
+     phone the bare text links were 18-21px tall — below the 24px WCAG 2.5.8
+     floor and awkward to hit with a thumb. Grow the hit area, not the type. */
+  .ics-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    margin-top: 0;
+  }
+  .event-title a {
+    display: inline-block;
+    padding: 5px 0;
+  }
+  .toggle {
+    min-height: 44px;
+    align-items: center;
+  }
+  .toggle input { width: 20px; height: 20px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
