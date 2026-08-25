@@ -28,7 +28,7 @@ Broad coverage, HTML only. Skim for North American entries the tier-1 feeds miss
 
 | # | Source | URL | Notes |
 | --- | --- | --- | --- |
-| 3 | **quantum.technology** | <https://quantum.technology/conf/index.html> | Maintained by Andrew White (Univ. of Queensland). Full-year list grouped by month; the widest academic coverage |
+| 3 | **quantum.technology** | <https://quantum.technology/conf/index.html> | Maintained by Andrew White (Univ. of Queensland). Full-year list grouped by month; the widest academic coverage. **Also check the next year's page** — <https://www.quantum.info/conf/2027.html> (same maintainer, mirrored domain), which is where 2027 events appear first |
 | 4 | **Quantum Computing Report** | <https://quantumcomputingreport.com/conferences/> | Industry-curated, good on commercial events |
 | 5 | **Sutor Group** | <https://sutorgroupintelligenceandadvisory.com/upcoming-quantum-conferences/> | Bob Sutor's list, ~77 events, updated frequently — timestamps each update |
 | 6 | **Entangled Future** | <https://entangledfuture.com/events/> | ~91 events, 2026–2027, tagged quantum vs AI/ML |
