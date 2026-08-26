@@ -3,6 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- GitHub Pages can't set response headers, so the policy is declared here.
+     The site loads nothing from third parties, so 'self' is achievable.
+     Note: frame-ancestors is ignored in a meta tag, so clickjacking can't be
+     blocked this way — there is nothing to click-jack (no forms, no auth). -->
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self';
+  style-src 'self';
+  img-src 'self' data:;
+  font-src 'self';
+  connect-src 'self';
+  object-src 'none';
+  base-uri 'none';
+  form-action 'none';
+  upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
 <title>Quantum Calendar | Quantum computing conferences &amp; events</title>
 <meta name="description" content="A running calendar of North American quantum computing conferences, summits, workshops and community events across the U.S., Canada and Mexico.">
 
@@ -15,8 +33,8 @@
 
 <!-- ?v= busts GitHub Pages' 10-minute asset cache. Bump it whenever
      style.css, app.js or the favicon changes. -->
-<link rel="stylesheet" href="style.css?v=7">
-<link rel="icon" href="assets/favicon.svg?v=7" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=8">
+<link rel="icon" href="assets/favicon.svg?v=8" type="image/svg+xml">
 </head>
 <body>
 
@@ -110,10 +128,10 @@
     <p>
       Quantum Calendar · North America only. Compiled monthly from ten sources
       including the
-      <a href="https://chicagoquantum.org/events" target="_blank" rel="noopener">Chicago Quantum Exchange</a>,
-      <a href="https://quantum.technology/conf/index.html" target="_blank" rel="noopener">quantum.technology</a>,
-      <a href="https://quantumcomputingreport.com/conferences/" target="_blank" rel="noopener">Quantum Computing Report</a>,
-      <a href="https://www.ibm.com/quantum/events" target="_blank" rel="noopener">IBM Quantum</a>
+      <a href="https://chicagoquantum.org/events" target="_blank" rel="noopener noreferrer">Chicago Quantum Exchange</a>,
+      <a href="https://quantum.technology/conf/index.html" target="_blank" rel="noopener noreferrer">quantum.technology</a>,
+      <a href="https://quantumcomputingreport.com/conferences/" target="_blank" rel="noopener noreferrer">Quantum Computing Report</a>,
+      <a href="https://www.ibm.com/quantum/events" target="_blank" rel="noopener noreferrer">IBM Quantum</a>
       and organizers' own pages. Dates change — always confirm on the event site
       before booking travel.
     </p>
@@ -121,6 +139,6 @@
   </div>
 </footer>
 
-<script src="app.js?v=7"></script>
+<script src="app.js?v=8"></script>
 </body>
 </html>

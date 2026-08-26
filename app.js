@@ -104,6 +104,15 @@
     return td;
   }
 
+  // events.json is assembled from ten third-party sources by an automated
+  // monthly job, so treat its URLs as untrusted: a `javascript:` or `data:`
+  // href would execute on click. Anything not plainly http(s) renders unlinked.
+  function safeUrl(url) {
+    if (!url) return '';
+    var trimmed = String(url).trim();
+    return /^https?:\/\/[^\s]+$/i.test(trimmed) ? trimmed : '';
+  }
+
   function renderRow(ev) {
     var row = el('tr', 'event-row' +
       (ev.featured ? ' is-featured' : '') +
@@ -112,11 +121,12 @@
     /* Conference */
     var nameCell = cell('Conference', 'col-name');
     var title = el('div', 'event-title');
-    if (ev.url) {
+    var href = safeUrl(ev.url);
+    if (href) {
       var link = el('a', null, ev.name);
-      link.href = ev.url;
+      link.href = href;
       link.target = '_blank';
-      link.rel = 'noopener';
+      link.rel = 'noopener noreferrer';
       title.appendChild(link);
     } else {
       title.textContent = ev.name;
@@ -221,8 +231,11 @@
     var endExclusive = new Date(ev.endDate.getTime());
     endExclusive.setDate(endExclusive.getDate() + 1);
 
+    // Same untrusted-input reasoning as the link href; a URL carrying a CRLF
+    // would otherwise inject extra properties into the calendar file.
+    var evUrl = safeUrl(ev.url);
     var description = ev.blurb || '';
-    if (ev.url) description += (description ? '\n\n' : '') + ev.url;
+    if (evUrl) description += (description ? '\n\n' : '') + evUrl;
 
     var lines = [
       'BEGIN:VCALENDAR',
@@ -238,7 +251,7 @@
       'LOCATION:' + icsEscape(ev.place),
       'DESCRIPTION:' + icsEscape(description)
     ];
-    if (ev.url) lines.push('URL:' + ev.url);
+    if (evUrl) lines.push('URL:' + evUrl);
     lines.push('END:VEVENT', 'END:VCALENDAR');
 
     var blob = new Blob([lines.join('\r\n')], { type: 'text/calendar;charset=utf-8' });
