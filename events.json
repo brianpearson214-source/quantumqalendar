@@ -617,6 +617,21 @@
       "blurb": "Fourth annual symposium on quantum computing and cybersecurity."
     },
     {
+      "id": "sc26",
+      "name": "SC26: International Conference for High Performance Computing",
+      "shortName": "SC26",
+      "start": "2026-11-15",
+      "end": "2026-11-20",
+      "place": "McCormick Place, Chicago, Illinois",
+      "country": "United States",
+      "region": "us",
+      "category": "research",
+      "audience": "HPC researchers, engineers, vendors",
+      "format": "in-person",
+      "url": "https://sc26.supercomputing.org/",
+      "blurb": "The major HPC conference. Primarily high-performance computing rather than quantum, but a long-standing venue for quantum-HPC integration work in its workshop and technical programme."
+    },
+    {
       "id": "quantum-optics-xi-2026",
       "name": "Quantum Optics XI: Mexico",
       "start": "2026-12-07",
