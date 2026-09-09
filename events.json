@@ -647,6 +647,20 @@
       "blurb": "Q2B's flagship winter conference, held jointly with the Chicago Quantum Summit."
     },
     {
+      "id": "ces-2027",
+      "name": "CES 2027",
+      "start": "2027-01-06",
+      "end": "2027-01-09",
+      "place": "Las Vegas Convention Center, Las Vegas, Nevada",
+      "country": "United States",
+      "region": "us",
+      "category": "industry",
+      "audience": "Industry, investors, enterprise buyers, media",
+      "format": "in-person",
+      "url": "https://www.ces.tech/",
+      "blurb": "CTA's flagship technology show, now with a dedicated quantum programme: the Quantum World Congress track and CES Foundry, featuring IBM, D-Wave and Quantinuum."
+    },
+    {
       "id": "spie-quantum-west-2027",
       "name": "SPIE Quantum West 2027",
       "start": "2027-01-30",
