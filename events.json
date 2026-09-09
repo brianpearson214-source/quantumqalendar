@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12",
+  "updated": "2026-09-09",
   "scope": "North America only (United States, Canada, Mexico), plus globally-open online events.",
   "events": [
     {
@@ -235,6 +235,21 @@
       "blurb": "Invitation-only summit on quantum and national security, hosted by Rice University."
     },
     {
+      "id": "fermilab-quantum-world-2026",
+      "name": "Fermilab: A Quantum World Reception",
+      "shortName": "Fermilab Quantum World Reception",
+      "start": "2026-09-10",
+      "end": "2026-09-10",
+      "place": "Fermilab, Batavia, Illinois",
+      "country": "United States",
+      "region": "us",
+      "category": "community",
+      "audience": "Public, local quantum community",
+      "format": "in-person",
+      "url": "https://chicagoquantum.org/event/fermilab-quantum-world-reception",
+      "blurb": "Public reception at Fermilab marking its quantum science programme."
+    },
+    {
       "id": "ai4qc-2026",
       "name": "AI for Circuit Synthesis, Optimization, and Discovery (AI4QC)",
       "shortName": "AI4QC 2026",
@@ -294,12 +309,27 @@
       "blurb": "Careers and recruiting event for students entering the quantum workforce."
     },
     {
+      "id": "iwqc-2026",
+      "name": "8th International Workshop on Quantum Compilation (IWQC 2026)",
+      "shortName": "IWQC 2026",
+      "start": "2026-09-19",
+      "end": "2026-09-20",
+      "place": "Xanadu HQ, Toronto, Ontario, Canada",
+      "country": "Canada",
+      "region": "canada",
+      "category": "research",
+      "audience": "Compiler researchers, quantum software engineers",
+      "format": "in-person",
+      "url": "https://quantum-compilers.github.io/iwqc2026/",
+      "blurb": "Circuit synthesis, optimisation and verification, hosted at Xanadu alongside IEEE Quantum Week."
+    },
+    {
       "id": "qre-2026",
       "name": "8th International Workshop on Quantum Resource Estimation (QRE2026)",
       "shortName": "QRE 2026",
       "start": "2026-09-21",
       "end": "2026-09-21",
-      "place": "Toronto, Ontario, Canada",
+      "place": "Xanadu HQ, Toronto, Ontario, Canada",
       "country": "Canada",
       "region": "canada",
       "category": "research",
@@ -706,11 +736,26 @@
       "blurb": "Major lasers and electro-optics meeting with a substantial quantum track."
     },
     {
+      "id": "qsdc-2027",
+      "name": "Quantum San Diego Convening (QSDC27)",
+      "shortName": "QSDC27",
+      "start": "2027-05-10",
+      "end": "2027-05-11",
+      "place": "UC San Diego, San Diego, California",
+      "country": "United States",
+      "region": "us",
+      "category": "policy",
+      "audience": "Industry, academia, government, national labs",
+      "format": "in-person",
+      "url": "https://quantumsandiego.org/",
+      "blurb": "Invitation-only working forum shaping California's statewide quantum strategy."
+    },
+    {
       "id": "quantum-tech-2027",
-      "name": "Quantum.Tech 2027",
-      "start": "2027-05-24",
+      "name": "Quantum.Tech World 2027",
+      "start": "2027-05-25",
       "end": "2027-05-26",
-      "place": "Boston, Massachusetts",
+      "place": "Encore Boston Harbor, Boston, Massachusetts",
       "country": "United States",
       "region": "us",
       "category": "industry",
