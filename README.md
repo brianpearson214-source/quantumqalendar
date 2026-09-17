@@ -63,35 +63,47 @@ Also bump `"updated"` at the top of the file — it renders in the footer.
 Dates are compiled from organizers' official pages. They change; re-check before
 each release.
 
-## Chicago startup tracker
+## Midwest startup tracker
 
 `startups.html` renders [`startups.json`](startups.json). Each entry:
 
 ```json
-{ "id": "memq", "name": "memQ", "url": "https://memq.tech/", "area": "hardware", "founded": 2021 }
+{ "id": "memq", "name": "memQ", "url": "https://memq.tech/",
+  "location": "Chicago, IL", "area": "hardware", "founded": 2021 }
 ```
 
 | Field | Values |
 | --- | --- |
+| `location` | `City, ST` |
 | `area` | `hardware`, `software`, `applications`, `consulting` |
 | `founded` | Four-digit year, or `null` if it can't be verified — renders as "—" |
 | `url` | The company's own site. Leave `""` rather than guess; the name renders unlinked |
 
-**Inclusion rule:** headquartered in the Chicago area today and still independent.
-That excludes Chicago *offices* of companies based elsewhere (PsiQuantum, IonQ,
-Pasqal, Infleqtion, Diraq), Duality alumni headquartered in other cities, and
-acquired companies (Super.tech, NuCrypt).
+**Inclusion rule:** headquartered in Illinois, Indiana or Wisconsin today, and
+still independent. That excludes:
+
+- Offices of companies based elsewhere — PsiQuantum, IonQ, Pasqal, Diraq,
+  Infleqtion (HQ Boulder, despite Madison and Chicago sites)
+- Acquired companies — Super.tech (Infleqtion, 2022), NuCrypt (QCi, 2026)
+- Established firms that aren't startups — Wolfram, Molex, Mad City Labs,
+  Sivananthan Labs, Phoenix Company of Chicago
+- Neighbouring states — Great Lakes Crystal Technologies (East Lansing, MI)
 
 Sources: the Chicago Quantum Exchange's
 [Quantum Prairie map](https://chicagoquantum.org/quantum-economy/quantum-companies-region),
 [Duality's cohorts](https://www.dualityaccelerator.com/innovators/), the
 [Polsky Venture Gallery](https://polsky.uchicago.edu/venture-gallery/) (filter by
-the Quantum industry tags), [UChicago News](https://news.uchicago.edu/), and
-[Northwestern's startup list](https://www.invo.northwestern.edu/innovation-commercialization/industry-partnership/startups/).
-Checked and found nothing new: Built In Chicago, Year of Illinois Quantum, IQMP
-On-Ramp tenants (all large companies), the George Shultz Innovation Fund, and
-The Garage at Northwestern. Verify each company's HQ separately — these
-sources list companies that are not actually based in Chicago.
+the Quantum industry tags), [UChicago News](https://news.uchicago.edu/),
+[Northwestern's startup list](https://www.invo.northwestern.edu/innovation-commercialization/industry-partnership/startups/),
+Purdue/Indiana and UW–Madison coverage (WisBusiness, IB Madison, IBJ), and
+Entangled Future's state directories.
+
+Checked, nothing new: Built In (Chicago, Madison, Indianapolis), Year of Illinois
+Quantum, IQMP On-Ramp tenants (all large companies), the George Shultz Innovation
+Fund, The Garage at Northwestern, and the Wisconsin Quantum Alliance.
+
+Verify each company's HQ separately — these sources all list companies that are
+not actually based in the region.
 
 ## Cache busting
 

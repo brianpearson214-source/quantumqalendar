@@ -277,11 +277,12 @@ main { padding: 28px 24px 56px; }
 .event-table .col-place   { width: 24%; }
 .event-table .col-audience{ width: 20%; }
 
-/* Startup tracker: three columns, so it needs far less room than events. */
-.startup-table { min-width: 480px; }
-.startup-table .col-name    { width: 56%; }
-.startup-table .col-area    { width: 26%; }
-.startup-table .col-founded { width: 18%; }
+/* Startup tracker: four columns, still narrower than the events table. */
+.startup-table { min-width: 620px; }
+.startup-table .col-name     { width: 34%; }
+.startup-table .col-location { width: 26%; }
+.startup-table .col-area     { width: 22%; }
+.startup-table .col-founded  { width: 18%; }
 .founded { font-variant-numeric: tabular-nums; color: var(--ink-soft); }
 
 
@@ -456,6 +457,7 @@ main { padding: 28px 24px 56px; }
   .event-table .col-place,
   .event-table .col-audience,
   .startup-table .col-name,
+  .startup-table .col-location,
   .startup-table .col-area,
   .startup-table .col-founded { width: auto; }
   .startup-table { min-width: 0; }

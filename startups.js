@@ -59,6 +59,10 @@
     nameCell.appendChild(title);
     row.appendChild(nameCell);
 
+    var locCell = cell('Location', 'col-location');
+    locCell.appendChild(el('span', 'place-name', s.location || '—'));
+    row.appendChild(locCell);
+
     var areaCell = cell('Area', 'col-area');
     areaCell.appendChild(el('span', 'tag tag-' + s.area, AREA_LABELS[s.area] || s.area));
     row.appendChild(areaCell);
@@ -72,11 +76,13 @@
 
   function render(startups) {
     var table = el('table', 'event-table startup-table');
-    table.appendChild(el('caption', 'sr-only', 'Chicago quantum startups, alphabetical'));
+    table.appendChild(el('caption', 'sr-only',
+      'Quantum startups in Illinois, Indiana and Wisconsin, alphabetical'));
 
     var thead = el('thead');
     var headRow = el('tr');
-    [['Company', 'col-name'], ['Area', 'col-area'], ['Founded', 'col-founded']]
+    [['Company', 'col-name'], ['Location', 'col-location'],
+     ['Area', 'col-area'], ['Founded', 'col-founded']]
       .forEach(function (h) {
         var th = el('th', h[1], h[0]);
         th.setAttribute('scope', 'col');

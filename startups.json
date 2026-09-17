@@ -1,11 +1,12 @@
 {
   "updated": "2026-09-17",
-  "scope": "Quantum startups headquartered in the Chicago area and still independent. Offices of companies based elsewhere, and acquired companies, are excluded.",
+  "scope": "Quantum startups headquartered in Illinois, Indiana or Wisconsin and still independent. Offices of companies based elsewhere, and acquired companies, are excluded.",
   "startups": [
     {
       "id": "anharmoniq",
       "name": "AnharmoniQ",
       "url": "https://anharmoniq.com/",
+      "location": "Chicago, IL",
       "area": "hardware",
       "founded": 2024
     },
@@ -13,6 +14,7 @@
       "id": "blanqet",
       "name": "Blanqet",
       "url": "https://blanqet.net/",
+      "location": "Chicago, IL",
       "area": "consulting",
       "founded": null
     },
@@ -20,20 +22,39 @@
       "id": "chicago-quantum",
       "name": "Chicago Quantum",
       "url": "https://www.chicagoquantum.com/",
+      "location": "Highland Park, IL",
       "area": "consulting",
       "founded": 2018
+    },
+    {
+      "id": "dirac-labs",
+      "name": "Dirac Labs",
+      "url": "https://diraclabs.com/",
+      "location": "Madison, WI",
+      "area": "hardware",
+      "founded": 2023
     },
     {
       "id": "eeroq",
       "name": "EeroQ",
       "url": "https://eeroq.com/",
+      "location": "Chicago, IL",
       "area": "hardware",
       "founded": 2017
+    },
+    {
+      "id": "femtosenselabs",
+      "name": "FemtoSenseLabs",
+      "url": "https://femtosenselabs.com/",
+      "location": "West Lafayette, IN",
+      "area": "hardware",
+      "founded": 2023
     },
     {
       "id": "florence-quantum-labs",
       "name": "Florence Quantum Labs",
       "url": "https://florencequantumlabs.com/",
+      "location": "Chicago, IL",
       "area": "applications",
       "founded": 2024
     },
@@ -41,6 +62,7 @@
       "id": "k1-semiconductor",
       "name": "K1 Semiconductor",
       "url": "https://k1semiconductor.com/",
+      "location": "Chicago, IL",
       "area": "hardware",
       "founded": 2025
     },
@@ -48,6 +70,7 @@
       "id": "levisens",
       "name": "LeviSens",
       "url": "https://www.levisens.tech/",
+      "location": "Evanston, IL",
       "area": "hardware",
       "founded": null
     },
@@ -55,13 +78,23 @@
       "id": "memq",
       "name": "memQ",
       "url": "https://memq.tech/",
+      "location": "Chicago, IL",
       "area": "hardware",
       "founded": 2021
+    },
+    {
+      "id": "photon-queue",
+      "name": "Photon Queue",
+      "url": "https://photonqueue.com/",
+      "location": "Champaign, IL",
+      "area": "hardware",
+      "founded": 2024
     },
     {
       "id": "photonids",
       "name": "PhotonIDs",
       "url": "https://photonids.com/",
+      "location": "Chicago, IL",
       "area": "software",
       "founded": null
     },
@@ -69,6 +102,7 @@
       "id": "qbraid",
       "name": "qBraid",
       "url": "https://www.qbraid.com/",
+      "location": "Chicago, IL",
       "area": "software",
       "founded": 2020
     },
@@ -76,6 +110,7 @@
       "id": "qdir",
       "name": "QDIR",
       "url": "https://qdinfrared.com/",
+      "location": "Chicago, IL",
       "area": "hardware",
       "founded": 2020
     },
@@ -83,13 +118,23 @@
       "id": "qodex-quantum",
       "name": "QodeX Quantum",
       "url": "https://qodexquantum.ai/",
+      "location": "Chicago, IL",
       "area": "software",
       "founded": 2025
+    },
+    {
+      "id": "qolab",
+      "name": "Qolab",
+      "url": "https://qolab.ai/",
+      "location": "Madison, WI",
+      "area": "hardware",
+      "founded": 2022
     },
     {
       "id": "qualla-labs",
       "name": "Qualla Labs",
       "url": "https://quallalabs.com/",
+      "location": "Chicago, IL",
       "area": "applications",
       "founded": 2026
     },
@@ -97,6 +142,7 @@
       "id": "quantcad",
       "name": "QuantCAD",
       "url": "https://quantcad.com/",
+      "location": "Chicago, IL",
       "area": "software",
       "founded": 2009
     },
@@ -104,13 +150,31 @@
       "id": "quantopticon",
       "name": "Quantopticon",
       "url": "https://quantopticon.co.uk/",
+      "location": "Chicago, IL",
       "area": "software",
       "founded": 2017
+    },
+    {
+      "id": "quantum-corridor",
+      "name": "Quantum Corridor",
+      "url": "https://www.quantumcorridor.com/",
+      "location": "Hammond, IN",
+      "area": "hardware",
+      "founded": 2021
+    },
+    {
+      "id": "quantum-research-sciences",
+      "name": "Quantum Research Sciences",
+      "url": "https://quantumresearchsciences.com/",
+      "location": "Lafayette, IN",
+      "area": "software",
+      "founded": 2022
     },
     {
       "id": "stac12",
       "name": "staC12",
       "url": "https://stac12.com/",
+      "location": "Chicago, IL",
       "area": "hardware",
       "founded": 2024
     }
