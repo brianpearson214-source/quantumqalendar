@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Same policy as index.html; see the note there. -->
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self';
+  style-src 'self';
+  img-src 'self' data:;
+  font-src 'self';
+  connect-src 'self';
+  object-src 'none';
+  base-uri 'none';
+  form-action 'none';
+  upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<title>Chicago Quantum Startups | Quantum Calendar</title>
+<meta name="description" content="A tracker of quantum startups headquartered in the Chicago area: hardware, software, applications and consulting.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chicago Quantum Startups">
+<meta property="og:description" content="Quantum startups headquartered in the Chicago area, by area and founding year.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chicago Quantum Startups">
+<meta name="twitter:description" content="Quantum startups headquartered in the Chicago area, by area and founding year.">
+
+<!-- Keep ?v= in step with index.html. -->
+<link rel="stylesheet" href="style.css?v=9">
+<link rel="icon" href="assets/favicon.svg?v=9" type="image/svg+xml">
+</head>
+<body>
+
+<a class="skip-link" href="#tracker">Skip to startups</a>
+
+<header class="masthead">
+  <div class="container masthead-inner">
+    <a class="wordmark" href="./">
+      <svg class="wordmark-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="3" y="5" width="18" height="16" rx="3" fill="none"
+              stroke="currentColor" stroke-width="2"/>
+        <path d="M3 10h18" stroke="currentColor" stroke-width="2"/>
+        <path d="M8 2.5v4M16 2.5v4" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round"/>
+        <rect x="6.75" y="13" width="3.5" height="3.5" rx="1" fill="currentColor"/>
+      </svg>
+      <span class="wordmark-text">Quantum<em>Calendar</em></span>
+    </a>
+    <nav class="masthead-nav" aria-label="Site">
+      <a href="./">Quantum Events</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Chicago Quantum Startups</h1>
+  </div>
+</section>
+
+<main class="container" id="tracker-main">
+  <p class="result-count" id="result-count" aria-live="polite"></p>
+  <div id="tracker"></div>
+
+  <div class="empty" id="load-error" hidden>
+    <h2>Couldn't load the startup data.</h2>
+    <p>
+      <code>startups.json</code> is fetched over HTTP, so opening this page
+      straight from the filesystem won't work. Serve the folder instead:
+    </p>
+    <pre><code>python3 -m http.server 8000</code></pre>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>
+      Quantum startups headquartered in the Chicago area and still independent.
+      Compiled from the
+      <a href="https://chicagoquantum.org/quantum-economy/quantum-companies-region" target="_blank" rel="noopener noreferrer">Chicago Quantum Exchange</a>,
+      <a href="https://www.dualityaccelerator.com/innovators/" target="_blank" rel="noopener noreferrer">Duality</a>
+      and the
+      <a href="https://polsky.uchicago.edu/venture-gallery/" target="_blank" rel="noopener noreferrer">Polsky Center</a>.
+    </p>
+    <p class="footer-meta">Last updated <span id="last-updated">—</span></p>
+  </div>
+</footer>
+
+<script src="startups.js?v=9"></script>
+</body>
+</html>

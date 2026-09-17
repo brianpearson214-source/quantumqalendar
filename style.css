@@ -97,6 +97,19 @@ a { color: var(--accent); }
 }
 .wordmark-text em { font-style: normal; color: var(--accent); }
 
+/* One link to the other page — the calendar and the startup tracker. */
+.masthead-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: .92rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.masthead-nav a:hover { color: var(--accent); }
+
 /* ---------- hero ---------- */
 
 .hero {
@@ -264,6 +277,13 @@ main { padding: 28px 24px 56px; }
 .event-table .col-place   { width: 24%; }
 .event-table .col-audience{ width: 20%; }
 
+/* Startup tracker: three columns, so it needs far less room than events. */
+.startup-table { min-width: 480px; }
+.startup-table .col-name    { width: 56%; }
+.startup-table .col-area    { width: 26%; }
+.startup-table .col-founded { width: 18%; }
+.founded { font-variant-numeric: tabular-nums; color: var(--ink-soft); }
+
 
 .event-row td {
   padding: 14px 16px;
@@ -347,6 +367,12 @@ main { padding: 28px 24px 56px; }
 .tag-policy   { border-color: color-mix(in srgb, var(--amber) 55%, transparent); color: var(--amber); }
 .tag-community{ border-color: color-mix(in srgb, #5b7fa6 55%, transparent); color: #4a6f96; }
 
+/* Startup areas reuse the same palette so both pages read as one site. */
+.tag-hardware    { border-color: color-mix(in srgb, #10345e 55%, transparent); color: #10345e; }
+.tag-software    { border-color: color-mix(in srgb, #2a6f97 50%, transparent); color: #2a6f97; }
+.tag-applications{ border-color: color-mix(in srgb, #5b7fa6 55%, transparent); color: #4a6f96; }
+.tag-consulting  { border-color: color-mix(in srgb, var(--amber) 55%, transparent); color: var(--amber); }
+
 .soon {
   display: inline-block;
   margin-top: 6px;
@@ -428,7 +454,11 @@ main { padding: 28px 24px 56px; }
   .event-table .col-name,
   .event-table .col-dates,
   .event-table .col-place,
-  .event-table .col-audience { width: auto; }
+  .event-table .col-audience,
+  .startup-table .col-name,
+  .startup-table .col-area,
+  .startup-table .col-founded { width: auto; }
+  .startup-table { min-width: 0; }
 
   .event-row {
     padding: 14px 16px;

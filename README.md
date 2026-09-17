@@ -63,6 +63,32 @@ Also bump `"updated"` at the top of the file — it renders in the footer.
 Dates are compiled from organizers' official pages. They change; re-check before
 each release.
 
+## Chicago startup tracker
+
+`startups.html` renders [`startups.json`](startups.json). Each entry:
+
+```json
+{ "id": "memq", "name": "memQ", "url": "https://memq.tech/", "area": "hardware", "founded": 2021 }
+```
+
+| Field | Values |
+| --- | --- |
+| `area` | `hardware`, `software`, `applications`, `consulting` |
+| `founded` | Four-digit year, or `null` if it can't be verified — renders as "—" |
+| `url` | The company's own site. Leave `""` rather than guess; the name renders unlinked |
+
+**Inclusion rule:** headquartered in the Chicago area today and still independent.
+That excludes Chicago *offices* of companies based elsewhere (PsiQuantum, IonQ,
+Pasqal, Infleqtion, Diraq), Duality alumni headquartered in other cities, and
+acquired companies (Super.tech, NuCrypt).
+
+Sources: the Chicago Quantum Exchange's
+[Quantum Prairie map](https://chicagoquantum.org/quantum-economy/quantum-companies-region),
+[Duality's cohorts](https://www.dualityaccelerator.com/innovators/), and the
+[Polsky Venture Gallery](https://polsky.uchicago.edu/venture-gallery/) (filter by
+the Quantum industry tags). Verify each company's HQ separately — all three
+sources list companies that are not actually based in Chicago.
+
 ## Cache busting
 
 GitHub Pages serves assets with `cache-control: max-age=600`, so a returning

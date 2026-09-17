@@ -1,0 +1,104 @@
+{
+  "updated": "2026-09-17",
+  "scope": "Quantum startups headquartered in the Chicago area and still independent. Offices of companies based elsewhere, and acquired companies, are excluded.",
+  "startups": [
+    {
+      "id": "anharmoniq",
+      "name": "AnharmoniQ",
+      "url": "https://anharmoniq.com/",
+      "area": "hardware",
+      "founded": 2024
+    },
+    {
+      "id": "blanqet",
+      "name": "Blanqet",
+      "url": "https://blanqet.net/",
+      "area": "consulting",
+      "founded": null
+    },
+    {
+      "id": "chicago-quantum",
+      "name": "Chicago Quantum",
+      "url": "https://www.chicagoquantum.com/",
+      "area": "consulting",
+      "founded": 2018
+    },
+    {
+      "id": "eeroq",
+      "name": "EeroQ",
+      "url": "https://eeroq.com/",
+      "area": "hardware",
+      "founded": 2017
+    },
+    {
+      "id": "florence-quantum-labs",
+      "name": "Florence Quantum Labs",
+      "url": "https://florencequantumlabs.com/",
+      "area": "applications",
+      "founded": 2024
+    },
+    {
+      "id": "k1-semiconductor",
+      "name": "K1 Semiconductor",
+      "url": "https://k1semiconductor.com/",
+      "area": "hardware",
+      "founded": 2025
+    },
+    {
+      "id": "memq",
+      "name": "memQ",
+      "url": "https://memq.tech/",
+      "area": "hardware",
+      "founded": 2021
+    },
+    {
+      "id": "photonids",
+      "name": "PhotonIDs",
+      "url": "https://photonids.com/",
+      "area": "software",
+      "founded": null
+    },
+    {
+      "id": "qbraid",
+      "name": "qBraid",
+      "url": "https://www.qbraid.com/",
+      "area": "software",
+      "founded": 2020
+    },
+    {
+      "id": "qdir",
+      "name": "QDIR",
+      "url": "https://qdinfrared.com/",
+      "area": "hardware",
+      "founded": 2020
+    },
+    {
+      "id": "qodex-quantum",
+      "name": "QodeX Quantum",
+      "url": "https://qodexquantum.ai/",
+      "area": "software",
+      "founded": 2025
+    },
+    {
+      "id": "quantcad",
+      "name": "QuantCAD",
+      "url": "https://quantcad.com/",
+      "area": "software",
+      "founded": 2009
+    },
+    {
+      "id": "stac12",
+      "name": "staC12",
+      "url": "https://stac12.com/",
+      "area": "hardware",
+      "founded": 2024
+    },
+    {
+      "id": "synthbits",
+      "name": "SynthBits",
+      "url": "",
+      "area": "hardware",
+      "founded": 2024
+    }
+  ]
+}
