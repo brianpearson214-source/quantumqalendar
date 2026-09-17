@@ -84,9 +84,13 @@ acquired companies (Super.tech, NuCrypt).
 
 Sources: the Chicago Quantum Exchange's
 [Quantum Prairie map](https://chicagoquantum.org/quantum-economy/quantum-companies-region),
-[Duality's cohorts](https://www.dualityaccelerator.com/innovators/), and the
+[Duality's cohorts](https://www.dualityaccelerator.com/innovators/), the
 [Polsky Venture Gallery](https://polsky.uchicago.edu/venture-gallery/) (filter by
-the Quantum industry tags). Verify each company's HQ separately — all three
+the Quantum industry tags), [UChicago News](https://news.uchicago.edu/), and
+[Northwestern's startup list](https://www.invo.northwestern.edu/innovation-commercialization/industry-partnership/startups/).
+Checked and found nothing new: Built In Chicago, Year of Illinois Quantum, IQMP
+On-Ramp tenants (all large companies), the George Shultz Innovation Fund, and
+The Garage at Northwestern. Verify each company's HQ separately — these
 sources list companies that are not actually based in Chicago.
 
 ## Cache busting

@@ -45,6 +45,13 @@
       "founded": 2025
     },
     {
+      "id": "levisens",
+      "name": "LeviSens",
+      "url": "https://www.levisens.tech/",
+      "area": "hardware",
+      "founded": null
+    },
+    {
       "id": "memq",
       "name": "memQ",
       "url": "https://memq.tech/",
@@ -94,16 +101,16 @@
       "founded": 2009
     },
     {
+      "id": "quantopticon",
+      "name": "Quantopticon",
+      "url": "https://quantopticon.co.uk/",
+      "area": "software",
+      "founded": 2017
+    },
+    {
       "id": "stac12",
       "name": "staC12",
       "url": "https://stac12.com/",
-      "area": "hardware",
-      "founded": 2024
-    },
-    {
-      "id": "synthbits",
-      "name": "SynthBits",
-      "url": "",
       "area": "hardware",
       "founded": 2024
     }
