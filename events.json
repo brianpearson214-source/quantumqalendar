@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09",
+  "updated": "2026-10-01",
   "scope": "North America only (United States, Canada, Mexico), plus globally-open online events.",
   "events": [
     {
@@ -455,6 +455,21 @@
       "blurb": "Single-day industry briefing on the state of the field."
     },
     {
+      "id": "qstep-2026",
+      "name": "QSTEP: Quantum Science, Technology and Engineering Workshop",
+      "shortName": "QSTEP 2026",
+      "start": "2026-10-02",
+      "end": "2026-10-04",
+      "place": "Purdue University, West Lafayette, Indiana",
+      "country": "United States",
+      "region": "us",
+      "category": "community",
+      "audience": "Upper-level undergraduates, early graduate students",
+      "format": "in-person",
+      "url": "https://www.purdue.edu/science/events/qstep.html",
+      "blurb": "Purdue workshop introducing quantum fundamentals and career paths to students."
+    },
+    {
       "id": "netqsa-2026",
       "name": "1st ICNP Workshop on Networked Quantum Systems and Applications (NetQSA 2026)",
       "shortName": "NetQSA 2026",
@@ -468,6 +483,20 @@
       "format": "in-person",
       "url": "https://netqsa.github.io/netqsa26/",
       "blurb": "Quantum networking workshop co-located with IEEE ICNP."
+    },
+    {
+      "id": "q-ready-grad-roundtable-2026",
+      "name": "Q-Ready Graduate School Roundtable",
+      "start": "2026-10-13",
+      "end": "2026-10-13",
+      "place": "Online (Zoom)",
+      "country": "Online",
+      "region": "online",
+      "category": "community",
+      "audience": "Prospective graduate students",
+      "format": "virtual",
+      "url": "https://chicagoquantum.org/event/q-ready-graduate-school-roundtable",
+      "blurb": "Admissions, research and funding Q&A with five CQE member universities."
     },
     {
       "id": "squint-2026",
@@ -617,6 +646,22 @@
       "blurb": "Fourth annual symposium on quantum computing and cybersecurity."
     },
     {
+      "id": "midqwest-2026",
+      "name": "MidQWest 2026 — Midwest Quantum Hackathon",
+      "shortName": "MidQWest 2026",
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "place": "University of Illinois Chicago, Chicago, Illinois",
+      "country": "United States",
+      "region": "us",
+      "category": "community",
+      "audience": "Midwest students (IL, IN, WI)",
+      "format": "in-person",
+      "url": "https://www.midqwest.dev/",
+      "featured": true,
+      "blurb": "Student-led quantum hackathon run by groups from UIUC, UChicago, Purdue, Purdue Northwest, UW-Madison and UIC. Free for Midwest students."
+    },
+    {
       "id": "sc26",
       "name": "SC26: International Conference for High Performance Computing",
       "shortName": "SC26",
@@ -630,6 +675,35 @@
       "format": "in-person",
       "url": "https://sc26.supercomputing.org/",
       "blurb": "The major HPC conference. Primarily high-performance computing rather than quantum, but a long-standing venue for quantum-HPC integration work in its workshop and technical programme."
+    },
+    {
+      "id": "quantum-recruiting-forum-2026",
+      "name": "Chicago Quantum Recruiting Forum",
+      "start": "2026-12-07",
+      "end": "2026-12-07",
+      "place": "mHUB, Chicago, Illinois",
+      "country": "United States",
+      "region": "us",
+      "category": "community",
+      "audience": "Students, postdocs, employers",
+      "format": "in-person",
+      "url": "https://chicagoquantum.org/quantum-recruiting-forum-2026",
+      "blurb": "Career fair and one-to-one recruiter meetings; drew 600 attendees last year."
+    },
+    {
+      "id": "quantum-developer-day-2026",
+      "name": "Quantum Developer Day 2026: Quantum in Production",
+      "shortName": "Quantum Developer Day",
+      "start": "2026-12-07",
+      "end": "2026-12-07",
+      "place": "Microsoft Innovation Hub, Aon Center, Chicago, Illinois",
+      "country": "United States",
+      "region": "us",
+      "category": "industry",
+      "audience": "Quantum developers, engineers",
+      "format": "in-person",
+      "url": "https://quantumdeveloperday.com/",
+      "blurb": "qBraid's developer day on logical qubits, error correction and tooling, with hardware demos."
     },
     {
       "id": "quantum-optics-xi-2026",
@@ -660,6 +734,21 @@
       "url": "https://q2b.qcware.com/conference/2026-chicago",
       "featured": true,
       "blurb": "Q2B's flagship winter conference, held jointly with the Chicago Quantum Summit."
+    },
+    {
+      "id": "quantum-roundtable-qase-2026",
+      "name": "Quantum Roundtable: What's Your Business 'Qase'?",
+      "shortName": "Quantum Business Roundtable",
+      "start": "2026-12-09",
+      "end": "2026-12-09",
+      "place": "Union League Club of Chicago, Chicago, Illinois",
+      "country": "United States",
+      "region": "us",
+      "category": "industry",
+      "audience": "Business leaders",
+      "format": "in-person",
+      "url": "https://luma.com/9cjvwjf9",
+      "blurb": "Practical quantum literacy session for the business community, part of Midwest Quantum Week."
     },
     {
       "id": "ces-2027",
