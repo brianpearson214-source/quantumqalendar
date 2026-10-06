@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01",
+  "updated": "2026-10-06",
   "scope": "North America only (United States, Canada, Mexico), plus globally-open online events.",
   "events": [
     {
@@ -542,6 +542,20 @@
       "blurb": "Recruiting event connecting quantum employers and candidates."
     },
     {
+      "id": "quantum-california-convening-2026",
+      "name": "Quantum California Convening",
+      "start": "2026-10-22",
+      "end": "2026-10-23",
+      "place": "Covel Commons, UCLA, Los Angeles, California",
+      "country": "United States",
+      "region": "us",
+      "category": "policy",
+      "audience": "Industry, academia, state government",
+      "format": "in-person",
+      "url": "https://qdc-qcsa.org/quantum-california",
+      "blurb": "Two-day convening on California's statewide quantum strategy, run with the Governor's Office, GO-Biz and the University of California."
+    },
+    {
       "id": "quantum-ai-3-2026",
       "name": "Q+AI 3.0 (includes PQC+IQT)",
       "shortName": "Q+AI 3.0",
@@ -896,6 +910,21 @@
       "format": "in-person",
       "url": "https://www.aps.org/events/2027/damop-2027",
       "blurb": "58th annual DAMOP meeting, a core venue for atomic physics and quantum control."
+    },
+    {
+      "id": "useqip-2027",
+      "name": "Undergraduate School on Experimental Quantum Information Processing (USEQIP 2027)",
+      "shortName": "USEQIP 2027",
+      "start": "2027-05-31",
+      "end": "2027-06-11",
+      "place": "Institute for Quantum Computing, Waterloo, Ontario, Canada",
+      "country": "Canada",
+      "region": "canada",
+      "category": "community",
+      "audience": "Undergraduate students",
+      "format": "in-person",
+      "url": "https://uwaterloo.ca/institute-for-quantum-computing/outreach/useqip",
+      "blurb": "Two-week IQC summer school on experimental quantum information, free to students with travel bursaries. Applications close 3 January 2027."
     },
     {
       "id": "grs-quantum-control-2027",
